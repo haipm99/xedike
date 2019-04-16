@@ -12,9 +12,9 @@ const userSchema = new mongoose.Schema({
     isActive: { type: Boolean, default: true },
 });
 
-const user = mongoose.model('User', userSchema);
+const User = mongoose.model('User', userSchema);
 
 
 module.exports = {
-    userSchema, user
+    userSchema, User
 }
